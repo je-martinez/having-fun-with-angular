@@ -1,0 +1,12 @@
+<form [formGroup]="componentForm">
+  <label for="myfile">Select a file:</label>
+  <input
+    (change)="uploadFile($event)"
+    formControlName="myFiles"
+    type="file"
+    id="myfile"
+    name="myfile"
+    multiple="true"
+    accept="image/*"
+  />
+</form>
